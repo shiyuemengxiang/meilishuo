@@ -1,0 +1,199 @@
+*{
+	padding:0;
+	margin:0;
+	font-size: 12px;
+	font-family:arial,'微软雅黑','新宋体','华文彩云';
+}
+/*通用公共样式部分*/
+a{
+	color:#666;
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+/*通用样式部分结束*/
+/*顶部菜单*/
+	nav{
+		min-width:1200px;
+		height:30px;
+		background:#f7f7f7;
+	}
+	nav>.con{
+		width:1200px;
+		height: 30px;
+		margin:0 auto;
+	}
+	nav>.con li{
+		float: left;
+		border-right:1px dotted #cbcbcb ;
+	}
+	nav>.con li>a{
+		display: inline-block;
+		line-height: 30px;
+		/*padding:0 5px;*/
+		height: 30px;
+		margin:0 8px 0 8px;
+	}
+	nav>.con li>a:hover{
+		color:#fe3365;
+	}
+	.con li>i{
+		margin:0 4px 0 4px;
+		color:rgba(0,0,0,0.3);
+	}
+	.con li:nth-last-child(4) i{
+		color:#ff3366;
+	}
+	.con ul{
+		float: right;
+		margin-right:30px;
+	}
+	.con ul>li{
+		float: left;
+		position: relative;
+	}
+	.con ul>li:first-child{
+		width:440px;
+		float:left;
+		border: none;
+	}
+		/*子菜单样式*/
+	.con ul li .drop{
+		position: absolute;
+		display: none;
+		z-index:30;
+	}
+	.con ul li .drop ul{
+		width:80px;
+		/*text-align: center;*/
+		text-indent:0.5em;
+		background:#f7f7f7;
+		border: 1px solid #ededed;
+	}
+	.con ul li .drop ul li{
+		border: none;
+	}
+	.con ul li:hover .drop{
+		display: block;
+	}
+	/*导航下面内容*/
+		/*搜索区域*/
+		.nav-search{
+			min-width:1200px;
+			background:#fff;
+			border-bottom:1px solid #dddddd;
+		}
+	.nav-contain{
+		
+		width:1200px;
+		height:180px;
+		/*background: #60ffaa;*/
+		margin:20px auto;
+	}
+	/*内容区域空间区域*/
+	.nav-logo{
+		float:left;
+			margin-top: 55px;
+			margin-left:60px;
+	}
+	.nav-sear{
+			float:left;
+			margin-top: 40px;
+			margin-left:60px;
+		}
+		.nav-pic{
+			float:right;
+		}
+		/*整体区域占据结束*/
+		/*logo部分*/
+	.nav-logo img{
+		width:204px;
+		height:52px;
+	}
+	/*搜索框区域*/
+	.nav-search .nav-sear{
+		width:520px;
+		height:100px;
+	
+		/*background: orangered;*/
+	}
+	.nav-sear .sear-tab{
+		width:56px;
+		height:24px;
+		background: #fe3365;
+		color:#fff;
+		cursor: pointer;
+		text-align: center;
+		line-height: 24px;
+	}
+	.nav-search .nav-sear input{
+		width:450px;
+		height:30px;
+		border: 3px solid #fe3365;
+		outline: none;
+		text-indent:2em;
+		font-size: 15px;
+	}
+	.nav-search .nav-sear button{
+		width:64px;
+		height:36px;
+		background: #fe3365;
+		box-sizing: border-box;
+		font-size: 15px;
+		outline:none;
+		border: none;
+		cursor: pointer;
+		color:#fff;
+		text-align: center;
+	}
+	/*搜索文本*/
+	.nav-search .nav-sear .sear-txt{
+		width:520px;
+		margin-top:12px;
+	}
+	.nav-search .nav-sear .sear-txt a{
+		margin-right: 6px;
+	}
+	.nav-search .nav-sear .sear-txt a:nth-of-type(2n-1){
+		color:#fe3365;
+	}
+	/*右侧广告图片*/
+	.nav-pic img{
+		margin-top:25px;
+	}
+	/*搜索区域下部导航*/
+	.nav-search .search-nav{
+		width:1200px;
+		height:40px;
+		/*background: #FE3365;*/
+		margin: 0 auto;
+		line-height: 40px;
+	}
+	.nav-search .search-nav ul{
+		margin-left:80px;
+	}
+	.nav-search .search-nav ul li{
+		float: left;
+		font-weight: 700;
+		margin-right:80px;
+	}
+	.nav-search .search-nav ul li a{
+		font-size:16px;
+	}
+	/*第一个a默认选中*/
+	.nav-search .search-nav ul li:first-child a{
+		border-bottom: 3px solid #fe3365;
+		color:#fe3365;
+		padding-bottom:7px;
+	}
+	.nav-search .search-nav ul li a:hover{
+		border-bottom: 3px solid #fe3365;
+		color:#fe3365;
+		padding-bottom:7px;
+	}
+	/*banner区域*/
+	.banner{
+		width:1200px;
+		margin: 20px auto;
+	}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>美丽说登录</title>
+		<link rel="shortcut icon" href="img/meili.png" />
+		<link rel="stylesheet" type="text/css" href="css/style1.css"/>
+		<style>
+			body{
+				background: rgb(221,221,221);
+			}
+			*{
+				padding:0;
+				margin:0;
+				font-size: 12px;
+				text-decoration: none;
+				color:#666;
+			}
+			/*顶部*/
+			header{
+				min-width: 1200px;
+				height:96.8px;
+				background: #fff;
+			}
+			header .nav{
+				width:1200px;
+				height:96.8px;
+				margin:0 auto;
+				/*border: 1px solid orange;*/
+				display: flex;
+				justify-content: space-between;
+			}
+			header .nav img{
+				width:204px;
+				height:52px;
+				margin-top:25px;
+				vertical-align: middle;
+			}
+			header .nav p{
+				display: inline-block;
+				height:26px;
+				margin-top:35px;
+				line-height: 26px;
+				background:#feeeee;
+				border: 1px solid #febfcb;
+				padding:0 45px;
+			}
+			/*登录注册*/
+			.content{
+				min-width:1200px;
+				height:600px;
+				background: url(img/bgbanne.png) no-repeat;
+				/*border: 1px solid red;*/
+				position: relative;
+				
+			}
+			.content .logoin{
+				width:400px;
+				height:348px;
+				background: #FFFFFF;
+				position: absolute;
+				top:80px;
+				right:240px;
+				opacity: .8;
+			}
+			.content .logoin .title{
+				width:98%;
+				height:50px;
+				position: relative;
+				left:2%;
+				border-bottom:1px solid #ddd;
+				display: flex;
+				justify-content:center;
+			}
+			.content .logoin .title span{
+				color:#000;
+				font-size:14px;
+				cursor: pointer;
+				font-weight: bold;
+				line-height:50px;
+				text-align: center;
+				padding: 0 30px;
+			}
+			.content .logoin .title span:first-child{
+				border-bottom: 2px solid #FE3365;
+				color:#FE3365;
+			}
+			/*输入框*/
+			.content .logoin .text{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			.content .logoin .text input{
+				width:300px;
+				height:40px;
+				text-indent: 1em;
+				margin-top:15px;
+				border: 1px solid #ddd;
+				color:#333;
+				outline: 0;
+			}
+				/*登录按钮样式*/
+				.content .logoin .text input[type='submit']{
+					background: #FE3365;
+					border-radius:4px;
+					border: 1px solid #FE3365;
+					color: #fff;
+					font-weight: bold;
+					cursor: pointer;
+				}
+				/*登录底部*/
+				.logoin-bottom {
+					margin-top:20px;
+					cursor: pointer;
+				}
+				.logoin-bottom .wx{
+				margin-left: 44px;
+				height: 26px;
+				line-height: 26px;
+				}
+				.logoin-bottom .wx img{
+					margin-right:8px;
+					/*margin-top:3px;*/
+					position: relative;
+					top:2px;
+				}
+				.logoin-bottom .reg{
+					margin-top: 30px;
+					margin-left:220px;
+				}
+				.logoin-bottom .reg a{
+					margin-right:35px;
+					color:#9e8b8a;
+					text-decoration: underline;
+				}
+				.logoin-bottom .reg a:last-child{
+					color: #FF3366;
+				}
+		</style>
+	</head>
+	<body>
+		<!--顶部-->
+		<header>
+			<div class="nav">
+				<img src="img/logo.png" alt="" />
+				<p>依《网络安全法》相关要求，即日起美丽说会员登陆需绑定手机。为保障您的账户安全及正常使用，如您尚未绑定，请尽快完成绑定，感谢您的理解和支持!</p>
+			</div>
+		</header>
+		<!--登录注册-->
+		<div class="content">
+			<div class="logoin">
+				<div class="title">
+					<span>普通登录</span>
+					<span>手机验证码登录</span>
+				</div>
+				<div class="text">
+					<input type="text" placeholder="用户名/手机号/邮箱"/>
+					<input type="password" placeholder="密码"/>
+					<input type="submit" value="登录"/>
+				</div>
+				<div class="logoin-bottom">
+					<div class="wx"><img src="img/wx.png"></img>微信登录</div>
+					<div class="reg">
+						<a href="">忘记密码</a><a href="">免费注册</a>
+					</div>
+				</div>
+		</div>
+		</div>
+		<!--底部开始-->
+		<div class="footer">
+			
+			<!--底部内容-->
+			<div class="foot-box">
+				<div class="d1">
+					<ul>
+						<li><h4>买家帮助</h4></li>
+						<li><a href="">新手指南</a></li>
+						<li><a href="">服务保障</a></li>
+						<li><a href="">风险监测</a></li>
+						<li><a href="">常见问题</a></li>
+					</ul>
+				</div>
+				<div class="d1">
+					<ul>
+						<li><h4>商家帮助</h4></li>
+						<li><a href="">供货商招募</a></li>
+						<li><a href="">商家后台</a></li>
+					</ul>
+				</div>
+				<div class="d1">
+					<ul>
+						<li><h4>关于我们</h4></li>
+						<li><a href="">关于美丽说</a></li>
+						<li><a href="">联系我们</a></li>
+					</ul>
+				</div>
+				<div class="d2">
+					<ul>
+						<li><h4>关注我们</h4></li>
+						<li><i class="fa fa-weibo"></i><a href="">新浪微博</a></li>
+						<li><i class="fa fa-qq"></i><a href="">QQ空间</a></li>
+						<li><i class="fa fa-wechat"></i><a href="">腾讯微博</a></li>
+					</ul>
+				</div>
+				<div class="d3">
+					<ul>
+						<li>
+							<h4>美丽说微信服务号</h4>
+						</li>
+					<li><a href=""><img src="img/d4.jpg" alt="" /></a></li>
+					</ul>
+				</div>
+				<div class="d4">
+					<ul>
+						<li>
+							<h4>美丽客户端下载</h4>
+						</li>
+					<li><a href=""><img src="img/d3.png" alt="" style="width:100px;height:100px"/></a></li>
+					</ul>
+				</div>
+			</div>
+			<!--版权声明部分-->
+			<div class="foot-copy">
+					<p>Copyright ©2017 Meilishuo.com  <a href="">电信与信息服务业务经营许可证100798号</a> <a href="">经营性网站备案信息</a> </p>
+					<p>京ICP备11031139号  京公网安备110108006045   客服电话：4000-800-577  文明办网文明上网举报电话：010-82615762  <a href="">违法不良信息举报中心</a></p>
+			</div>
+		</div>
+		<!--底部结束-->
+	</body>
+</html>
